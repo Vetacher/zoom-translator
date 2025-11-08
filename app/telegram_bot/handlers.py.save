@@ -1,0 +1,101 @@
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram.ext import ContextTypes
+import logging
+from datetime import datetime
+
+from app.database import SessionLocal, create_meeting_session, get_active_sessions, update_session_status, get_or_create_user_settings, MeetingSession
+from app.azure_translator.translator import AzureSpeechTranslator
+from app.zoom_handler.client import zoom_client
+
+logger = logging.getLogger(__name__)
+
+async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    user = update.effective_user
+    welcome_message = f"""
+🤖 Добро пожаловать в AI Переводчик для Zoom!
+
+Привет, {user.first_name}!
+
+Я помогу вам организовать синхронный перевод на ваших Zoom встречах используя Azure AI.
+
+📋 Доступные команды:
+/new - Создать новую сессию перевода
+/sessions - Посмотреть активные сессии
+/settings - Настройки языков и параметров
+/help - Помощь
+
+🎯 Как это работает:
+1. Вы создаёте встречу в Zoom
+2. Добавляете переводчика events@landao.vc в настройках встречи
+3. Через бота настраиваете языковую пару и время
+4. Бот автоматически подключается и переводит в реальном времени
+
+Начнём? Нажмите /new для создания первой сессии!
+    """
+    await update.message.reply_text(welcome_message)
+
+async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    help_text = """
+📚 Подробная инструкция:
+
+1️⃣ Создание встречи в Zoom:
+   • Зайдите на zoom.us
+   • Создайте встречу
+   • В настройках добавьте events@landao.vc как участника
+
+2️⃣ Настройка перевода в боте:
+   • Нажмите /new
+   • Отправьте ссылку на встречу
+   • Выберите языковую пару
+   • Укажите время начала (или "сейчас")
+
+3️⃣ Дополнительные возможности:
+   • Кастомный вокабуляр для точности
+   • Выбор кастомных моделей Azure
+   • Автоматические субтитры
+   • Статус сессии в реальном времени
+
+❓ Возникли проблемы?
+   • /sessions - проверьте статус
+   • Кнопка "Переподключиться" если встреча сбросилась
+
+💡 Поддерживаемые языки:
+Используйте /settings для выбора из 15+ языков
+    """
+    await update.message.reply_text(help_text)
+
+async def new_session_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text(
+        "🔗 Отправьте ссылку на Zoom встречу:\n\n"
+        "Например: https://zoom.us/j/123456789\n"
+        "или просто номер встречи: 123 456 789"
+    )
+    context.user_data['state'] = 'waiting_zoom_url'
+
+async def handle_zoom_url(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    zoom_url = update.message.text.strip()
+    context.user_data['zoom_url'] = zoom_url
+    
+    languages = AzureSpeechTranslator.get_supported_languages()
+    keyboard = []
+    for code, name in list(languages.items())[:8]:
+        keyboard.append([InlineKeyboardButton(name, callback_data=f"source_{code}")])
+    
+    reply_markup = InlineKeyboardMarkup(keyboard)
+    await update.message.reply_text(
+        "🗣 Выберите исходный язык (на каком говорят на встрече):",
+        reply_markup=reply_markup
+    )
+    context.user_data['state'] = 'waiting_source_language'
+
+async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    await query.answer()
+    data = query.data
+    
+    if data.startswith('source_'):
+        source_lang = data.replace('source_', '')
+        context.user_data['source_language'] = source_lang
+        
+        languages = AzureSpeechTranslator.get_supported_languages()
+        keyboard = []

@@ -1,0 +1,426 @@
+{
+  "Лиза Чернягина": {
+    "en": "Liza Cherniagina",
+    "description": "speaker name",
+    "alternatives": ["Елизавета Чернягина", "Лизавета Чернягина"]
+  },
+  "Алерон": {
+    "en": "Aleron",
+    "description": "speaker nickname",
+    "alternatives": ["Александр Миленькин"]
+  },
+  "Саша Миленкин": {
+    "en": "Sasha Milenkin",
+    "description": "speaker name",
+    "alternatives": ["Александр Миленькин", "Саша Миленькин"]
+  },
+  
+  "Telegram": {
+    "en": "Telegram",
+    "description": "messaging platform",
+    "alternatives": ["телеграм", "телеграмм", "телега"]
+  },
+  "Telegram бот": {
+    "en": "Telegram bot",
+    "description": "automated assistant",
+    "alternatives": ["телеграм бот", "телеграмм бот", "бот в телеграме"]
+  },
+  "mini apps": {
+    "en": "mini apps",
+    "description": "Telegram Mini Apps",
+    "alternatives": ["мини апп", "мини аппс", "мини эпс", "мини-приложения", "мини приложения"]
+  },
+  "Telegram Mini Apps": {
+    "en": "Telegram Mini Apps",
+    "description": "apps platform",
+    "alternatives": ["телеграм мини аппс", "телеграм мини эпс"]
+  },
+  
+  "ChatGPT": {
+    "en": "ChatGPT",
+    "description": "AI assistant",
+    "alternatives": ["чат жпт", "чатжипити", "чат джипити", "гпт"]
+  },
+  "n8n": {
+    "en": "n8n",
+    "description": "automation framework",
+    "alternatives": ["эн восемь эн", "энвосемьэн", "эн8эн", "н8н", "эн-восемь-эн"]
+  },
+  "MCP": {
+    "en": "MCP",
+    "description": "Model Context Protocol",
+    "alternatives": ["эм си пи", "мцп", "эмсипи"]
+  },
+  
+  "API": {
+    "en": "API",
+    "description": "programming interface",
+    "alternatives": ["апи", "а пи ай", "эй пи ай", "а-пи-ай"]
+  },
+  "LLM": {
+    "en": "LLM",
+    "description": "Large Language Model",
+    "alternatives": ["эл эл эм", "элелэм", "эл-эл-эм", "большая языковая модель"]
+  },
+  "AI": {
+    "en": "AI",
+    "description": "Artificial Intelligence",
+    "alternatives": ["ай", "эй ай", "искусственный интеллект", "ии"]
+  },
+  "ML": {
+    "en": "ML",
+    "description": "Machine Learning",
+    "alternatives": ["эм эл", "машинное обучение", "мл"]
+  },
+  
+  "Kaggle": {
+    "en": "Kaggle",
+    "description": "data science platform",
+    "alternatives": ["кэггл", "кагл", "каггл"]
+  },
+  "Data Scientist": {
+    "en": "Data Scientist",
+    "description": "data specialist",
+    "alternatives": ["дата сайентист", "дата саентист", "специалист по данным"]
+  },
+  "DataFeeling": {
+    "en": "DataFeeling",
+    "description": "AI channel name",
+    "alternatives": ["дата филинг", "датафилинг"]
+  },
+  
+  "Физтех": {
+    "en": "Fizteh",
+    "description": "MIPT university",
+    "alternatives": ["МФТИ", "московский физтех"]
+  },
+  "Физтех-Союз": {
+    "en": "Fizteh Union",
+    "description": "alumni organization",
+    "alternatives": ["физтех союз"]
+  },
+  "ФБМФ": {
+    "en": "FBMF",
+    "description": "faculty name",
+    "alternatives": ["ф б м ф", "факультет биологической и медицинской физики"]
+  },
+  
+  "Stepik": {
+    "en": "Stepik",
+    "description": "education platform",
+    "alternatives": ["степик", "стэпик"]
+  },
+  "Stepik Awards": {
+    "en": "Stepik Awards",
+    "description": "education award",
+    "alternatives": ["степик эвордс", "степик awards"]
+  },
+  
+  "Zoom": {
+    "en": "Zoom",
+    "description": "video platform",
+    "alternatives": ["зум", "зоом"]
+  },
+  "вебинар": {
+    "en": "webinar",
+    "description": "online seminar",
+    "alternatives": ["онлайн семинар", "вебинар"]
+  },
+  
+  "вайб-кодить": {
+    "en": "vibe coding",
+    "description": "intuitive coding",
+    "alternatives": ["вайб кодинг", "интуитивное программирование"]
+  },
+  "фреймворк": {
+    "en": "framework",
+    "description": "development framework",
+    "alternatives": ["framework"]
+  },
+  
+  "IT-предприниматель": {
+    "en": "IT entrepreneur",
+    "description": "tech business owner",
+    "alternatives": ["айти предприниматель", "it предприниматель"]
+  },
+  
+  "Dodo Brands": {
+    "en": "Dodo Brands",
+    "description": "company name",
+    "alternatives": ["додо брендс", "додо brands"]
+  },
+  "red_mad_robot": {
+    "en": "red_mad_robot",
+    "description": "company name",
+    "alternatives": ["ред мэд робот", "редмэдробот"]
+  },
+  "Х5 Group": {
+    "en": "X5 Group",
+    "description": "company name",
+    "alternatives": ["икс пять", "х5", "икс файв груп"]
+  },
+  
+  "MVP": {
+    "en": "MVP",
+    "description": "Minimum Viable Product",
+    "alternatives": ["эм ви пи", "мвп", "минимальный жизнеспособный продукт"]
+  },
+  "UTC": {
+    "en": "UTC",
+    "description": "time zone",
+    "alternatives": ["ю ти си", "координированное всемирное время"]
+  },
+
+  "_comment_new_terms": "=== НОВЫЕ ТЕРМИНЫ ИЗ ПРЕЗЕНТАЦИИ ===",
+
+  "MicroSAAS": {
+    "en": "MicroSAAS",
+    "description": "Микро-SaaS продукты",
+    "alternatives": ["микросаас", "микро саас", "микро-саас", "micro saas", "micro-saas", "микро-сас"]
+  },
+  "Product Hunt": {
+    "en": "Product Hunt",
+    "description": "Платформа для запуска продуктов",
+    "alternatives": ["продакт хант", "продукт хант", "product hunt", "продакт-хант", "продакхант"]
+  },
+  "openrouter.ai": {
+    "en": "openrouter.ai",
+    "description": "Сервис для AI моделей",
+    "alternatives": ["опенраутер", "open router", "опен роутер", "опен раутер", "опэнорутер", "опенроутер эй ай"]
+  },
+  "AI of the Day": {
+    "en": "AI of the Day",
+    "description": "Сервис для продвижения AI продуктов",
+    "alternatives": ["ай оф зе дей", "ai of the day", "ай офзедей", "эйай офзедей", "эй ай оф зе дэй"]
+  },
+  "Product Radar": {
+    "en": "Product Radar",
+    "description": "Платформа для мониторинга продуктов",
+    "alternatives": ["продакт радар", "product radar", "продукт радар", "продакрадар"]
+  },
+  "Hacker News": {
+    "en": "Hacker News",
+    "description": "Новостная платформа для технологий",
+    "alternatives": ["хакер ньюс", "хакернюс", "hacker news", "хакер нюс"]
+  },
+  "SCAMPER": {
+    "en": "SCAMPER",
+    "description": "Методика креативного мышления",
+    "alternatives": ["скампер", "scamper", "скэмпер", "скампэр"]
+  },
+  "Substitute": {
+    "en": "Substitute",
+    "description": "Заменить (из методики SCAMPER)",
+    "alternatives": ["субститьют", "substitute", "заменить"]
+  },
+  "Combine": {
+    "en": "Combine",
+    "description": "Комбинировать (из методики SCAMPER)",
+    "alternatives": ["комбайн", "combine", "комбинировать"]
+  },
+  "Adapt": {
+    "en": "Adapt",
+    "description": "Адаптировать (из методики SCAMPER)",
+    "alternatives": ["адапт", "adapt", "адаптировать"]
+  },
+  "Modify": {
+    "en": "Modify",
+    "description": "Модифицировать (из методики SCAMPER)",
+    "alternatives": ["модифай", "modify", "модифицировать"]
+  },
+  "Put to another use": {
+    "en": "Put to another use",
+    "description": "Использовать иначе (из методики SCAMPER)",
+    "alternatives": ["пут ту аназер юз", "put to another use"]
+  },
+  "Eliminate": {
+    "en": "Eliminate",
+    "description": "Устранить (из методики SCAMPER)",
+    "alternatives": ["элиминейт", "eliminate", "устранить"]
+  },
+  "Reverse": {
+    "en": "Reverse",
+    "description": "Изменить направление (из методики SCAMPER)",
+    "alternatives": ["реверс", "reverse", "изменить направление"]
+  },
+  "Vibe": {
+    "en": "Vibe",
+    "description": "Стиль, атмосфера",
+    "alternatives": ["вайб", "vibe", "вибе", "вайбе"]
+  },
+  "low coding": {
+    "en": "low-code",
+    "description": "Низкокодовая разработка (мало кода)",
+    "alternatives": ["лоу кодинг", "low coding", "low-code", "лоукодинг", "лоукод", "лоу код"]
+  },
+  "no-code": {
+    "en": "no-code",
+    "description": "Безкодовая разработка (без кода)",
+    "alternatives": ["ноу код", "no-code", "no code", "ноукод", "ноу-код", "без кода"]
+  },
+  "Replit": {
+    "en": "Replit",
+    "description": "Онлайн IDE платформа",
+    "alternatives": ["реплит", "replit", "рэплит", "репл ит"]
+  },
+  "Bolt": {
+    "en": "Bolt",
+    "description": "Инструмент для быстрого прототипирования",
+    "alternatives": ["болт", "bolt", "боулт", "болте"]
+  },
+  "Same.new": {
+    "en": "Same.new",
+    "description": "Платформа для клонирования и прототипирования сайтов",
+    "alternatives": ["сейм нью", "same new", "same.new", "сейм ню", "сейм дот нью"]
+  },
+  "Lovable": {
+    "en": "Lovable",
+    "description": "Платформа для создания UI с автоматизацией",
+    "alternatives": ["ловабл", "lovable", "лавабл", "ловэбл"]
+  },
+  "v0.dev": {
+    "en": "v0.dev",
+    "description": "Инструмент для генерации UI компонентов",
+    "alternatives": ["ви зиро дев", "v0 dev", "v0.dev", "в нуль дев", "ви ноль дев", "в зеро дев", "визеродев"]
+  },
+  "Firebase": {
+    "en": "Firebase",
+    "description": "Backend платформа от Google",
+    "alternatives": ["файрбейс", "firebase", "файербейс", "фаэр бэйз", "фаербейс"]
+  },
+  "Rork": {
+    "en": "Rork",
+    "description": "Платформа для мобильных приложений",
+    "alternatives": ["рорк", "rork", "рок", "рорке"]
+  },
+  "Supabase": {
+    "en": "Supabase",
+    "description": "Open-source альтернатива Firebase",
+    "alternatives": ["супабейс", "supabase", "супабазе"]
+  },
+  "Resend": {
+    "en": "Resend",
+    "description": "Email сервис для разработчиков",
+    "alternatives": ["ресенд", "resend", "рисенд"]
+  },
+  "SaaS": {
+    "en": "SaaS",
+    "description": "Software as a Service",
+    "alternatives": ["саас", "saas", "сааз", "софтвэр эз э сервис"]
+  },
+  "Expo": {
+    "en": "Expo",
+    "description": "Framework для React Native",
+    "alternatives": ["экспо", "expo"]
+  },
+  "Context7": {
+    "en": "Context7",
+    "description": "AI инструмент для разработки",
+    "alternatives": ["контекст севен", "context7", "контекст 7", "контекст семь", "контекстсевен"]
+  },
+  "Supercode.sh": {
+    "en": "Supercode.sh",
+    "description": "Платформа для AI кодинга",
+    "alternatives": ["суперкод", "supercode", "supercode.sh", "супер код", "суперкод эс эйч"]
+  },
+  "Figma MCP": {
+    "en": "Figma MCP",
+    "description": "Figma Model Context Protocol",
+    "alternatives": ["фигма эм си пи", "figma mcp", "фигма мсп"]
+  },
+  "Cursor": {
+    "en": "Cursor",
+    "description": "AI-powered code editor",
+    "alternatives": ["курсор", "cursor", "кюрсор", "кёрсор"]
+  },
+  "VS Code": {
+    "en": "VS Code",
+    "description": "Visual Studio Code",
+    "alternatives": ["ви эс код", "vs code", "visual studio code", "виэскод", "вс код"]
+  },
+  "PyCharm": {
+    "en": "PyCharm",
+    "description": "Python IDE",
+    "alternatives": ["пайчарм", "pycharm", "пичарм"]
+  },
+  "FlutterFlow": {
+    "en": "FlutterFlow",
+    "description": "Низкокодовая платформа для Flutter",
+    "alternatives": ["флаттерфлоу", "flutterflow", "флатерфлоу"]
+  },
+  "Leadtex": {
+    "en": "Leadtex",
+    "description": "Сервис для лидогенерации",
+    "alternatives": ["лидтекс", "leadtex", "лидтех"]
+  },
+  "Airtable": {
+    "en": "Airtable",
+    "description": "Облачная база данных и таблицы",
+    "alternatives": ["эйртейбл", "airtable", "аиртейбл", "эртейбл", "аир тейбл"]
+  },
+  "Figma": {
+    "en": "Figma",
+    "description": "Дизайн инструмент",
+    "alternatives": ["фигма", "figma"]
+  },
+  "Tilda": {
+    "en": "Tilda",
+    "description": "Конструктор сайтов",
+    "alternatives": ["тильда", "tilda"]
+  },
+  "Glide": {
+    "en": "Glide",
+    "description": "Платформа для создания приложений из таблиц",
+    "alternatives": ["глайд", "glide", "глид", "глайде"]
+  },
+  "Make": {
+    "en": "Make",
+    "description": "Платформа автоматизации (бывший Integromat)",
+    "alternatives": ["мейк", "make", "интегромат", "мэйк"]
+  },
+  "Salebot": {
+    "en": "Salebot",
+    "description": "Платформа для создания чат-ботов",
+    "alternatives": ["сейлбот", "salebot", "салебот", "сэйлбот"]
+  },
+  "Laqo": {
+    "en": "Laqo",
+    "description": "Инструмент для автоматизации",
+    "alternatives": ["лако", "laqo", "лакво", "лаку"]
+  },
+  "Vercel": {
+    "en": "Vercel",
+    "description": "Платформа для деплоя фронтенда",
+    "alternatives": ["версел", "vercel", "верцел"]
+  },
+  "UI": {
+    "en": "UI",
+    "description": "User Interface",
+    "alternatives": ["ю ай", "ui", "юай", "юзер интерфейс"]
+  },
+  "БД": {
+    "en": "database",
+    "description": "База данных",
+    "alternatives": ["бд", "база данных", "database", "датабейс"]
+  },
+  "email": {
+    "en": "email",
+    "description": "Электронная почта",
+    "alternatives": ["имейл", "email", "емейл", "е-мейл", "электронная почта"]
+  },
+  "runway": {
+    "en": "runway",
+    "description": "Взлетная полоса (финансовый термин - время до исчерпания средств)",
+    "alternatives": ["ранвей", "runway", "ранвэй"]
+  },
+  "MRR": {
+    "en": "MRR",
+    "description": "Monthly Recurring Revenue",
+    "alternatives": ["эм ар ар", "mrr", "monthly recurring revenue", "месячный рекуррентный доход"]
+  },
+  "pitch": {
+    "en": "pitch",
+    "description": "Презентация проекта инвесторам",
+    "alternatives": ["питч", "pitch", "пич"]
+  }
+}

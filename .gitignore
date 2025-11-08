@@ -1,0 +1,35 @@
+# Env & tokens
+.env
+*.env
+.zoom_tokens
+
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.db
+
+# Virtual envs
+venv/
+.env/
+
+# Temp / logs / artifacts
+tmp/
+logs/
+o/
+*.log
+*.tmp
+
+# Data & media
+videos/
+*.mp4
+*.wav
+
+# OS / tools
+.DS_Store
+
+# Packages / installers
+*.deb
+*.whl
+*.zip
+*.tar.gz
